@@ -79,19 +79,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:layout_marginTop="20dp"
-            app:cardCornerRadius="10dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/purple_500"
             android:textColor="@color/white"
-            app:cardElevation="10dp"
-            android:backgroundTint="#411981"
-            >
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_gravity="center_vertical"
                 android:gravity="center_horizontal"
+                android:orientation="vertical"
                 android:paddingTop="40dp">
 
                 <TextView
@@ -112,6 +112,7 @@
                     android:text="Milkyway Galaxy"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
+
                 <View
                     android:layout_width="30dp"
                     android:layout_height="1dp"
@@ -125,10 +126,12 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"
                     android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/distance_icon"/>
+                        android:src="@drawable/distance_icon" />
+
                     <TextView
                         android:id="@+id/distance_info"
                         android:layout_width="wrap_content"
@@ -138,11 +141,13 @@
                         android:text="km"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
+
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="24dp"
                         android:layout_marginStart="20dp"
-                        android:src="@drawable/gravity_icon"/>
+                        android:src="@drawable/gravity_icon" />
+
                     <TextView
                         android:id="@+id/gravity_info"
                         android:layout_width="wrap_content"
@@ -156,9 +161,7 @@
                 </LinearLayout>
 
 
-
             </LinearLayout>
-
 
 
         </androidx.cardview.widget.CardView>
