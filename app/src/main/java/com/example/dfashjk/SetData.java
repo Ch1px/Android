@@ -10,7 +10,7 @@ public class SetData {
         planetList.add(
                 new PlanetData(
                         7,
-                        "Sun",
+                        "The Sun",
                         "Milkyway Galaxy",
                         "0",
                         "274.0",

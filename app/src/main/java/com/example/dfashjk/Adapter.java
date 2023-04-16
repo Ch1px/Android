@@ -69,7 +69,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
             case "mercury":
                 dummyImage[0] =  R.drawable.mercury_img;
                 break;
-            case "sun":
+            case "the sun":
                 dummyImage[0] =  R.drawable.sun_img;
                 break;
         }

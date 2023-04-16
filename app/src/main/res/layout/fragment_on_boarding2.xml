@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:background="@color/purple_200">
+    android:background="@color/purple_700"
+    android:fitsSystemWindows="true">
 
 
     <ImageView
@@ -25,7 +25,7 @@
         android:layout_marginTop="50dp"
         android:fontFamily="@font/baloo"
         android:text="Solar Explore"
-        android:textColor="@color/black"
+        android:textColor="?android:attr/textColorSecondaryInverse"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="@id/onBoardImg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
         android:layout_marginTop="50dp"
         android:fontFamily="@font/baloo"
         android:text="Skip"
-        android:textColor="@color/black"
+        android:textColor="?android:attr/textColorTertiaryInverse"
         android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@id/onBoardImg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +54,7 @@
         android:id="@+id/skipArrow"
         android:layout_width="17dp"
         android:layout_height="17dp"
+        android:backgroundTint="@color/white"
         android:layout_marginTop="54dp"
         android:background="@drawable/skip_icon"
         app:layout_constraintBottom_toBottomOf="@id/skip"
@@ -69,6 +70,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/baloo"
         android:text="Explore"
+        android:textColor="?android:attr/textColorSecondaryInverse"
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +85,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/baloo"
         android:text="Everywhere"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,6 +101,7 @@
         android:layout_marginTop="5dp"
         android:fontFamily="@font/baloo"
         android:text="Exploring astronomy is like embarking on a journey of discovery through the universe."
+        android:textColor="?android:attr/textColorSecondaryInverse"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,17 +114,18 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:scaleY="2"
+        android:layout_marginTop="100dp"
         android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/tab_2"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="@id/exploreDis"
         app:layout_constraintTop_toBottomOf="@id/exploreDis"
         app:layout_constraintVertical_bias="0"
-        app:layout_constraintWidth_percent=".5"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/tab2_icon"/>
+        app:layout_constraintWidth_percent=".5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:background="#6ED5CB">
+    android:background="#78DCFB"
+    android:fitsSystemWindows="true">
 
 
     <ImageView
@@ -85,12 +85,12 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@color/purple_700"
+        android:elevation="10dp"
         android:fontFamily="@font/baloo"
         android:text="Get Started"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="12sp"
-        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
@@ -101,8 +101,8 @@
     <View
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginTop="21dp"
         android:layout_marginStart="5dp"
+        android:layout_marginTop="21dp"
         android:background="@drawable/button_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,17 +114,17 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:scaleY="2"
+        android:layout_marginTop="100dp"
         android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/tab3_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="@id/interactDis"
         app:layout_constraintTop_toBottomOf="@id/interactDis"
         app:layout_constraintVertical_bias="0"
-        app:layout_constraintWidth_percent=".5"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/tab3_icon"/>
+        app:layout_constraintWidth_percent=".5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,6 @@ public class SolarActivity extends AppCompatActivity implements NavigationView.O
     NavigationView navigationView;
     Toolbar toolbar;
 
-    TextView data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,35 +38,7 @@ public class SolarActivity extends AppCompatActivity implements NavigationView.O
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar2);
-        data = findViewById(R.id.data);
 
-
-            String url = "https://api.visibleplanets.dev/v3?latitude=32&longitude=-98";
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
-                    (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-
-                        @Override
-                        public void onResponse(JSONObject response) {
-                            try {
-                                    String planetName = response.getString("1:");
-                                    double planetMagnitude = response.getDouble("magnitude");
-                                    // Extract other data as needed
-                                    data.setText(planetName);
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }, new Response.ErrorListener() {
-
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                            error.printStackTrace();
-                        }
-                    });
-
-            // Add the request to the RequestQueue.
-            RequestQueue queue = Volley.newRequestQueue(this);
-            queue.add(jsonObjectRequest);
 
         setSupportActionBar(toolbar);
         navigationView.bringToFront();
