@@ -34,7 +34,7 @@ public class PlanetActivity extends AppCompatActivity implements NavigationView.
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar2);
 
-        recycler.setAdapter(new Adapter(SetData.SetPlanets()));
+        recycler.setAdapter(new PlanetAdapter(SetData.SetPlanets()));
         recycler.setLayoutManager(new LinearLayoutManager(this));
 
 
@@ -52,11 +52,14 @@ public class PlanetActivity extends AppCompatActivity implements NavigationView.
                     case R.id.nav_home:
                         startActivity(new Intent(PlanetActivity.this, MainActivity.class));
                         return true;
-                    case R.id.nav_contact:
-                        startActivity(new Intent(PlanetActivity.this, ContactActivity.class));
-                        return true;
                     case R.id.nav_solar:
-                        startActivity(new Intent(PlanetActivity.this, SolarActivity.class));
+                        startActivity(new Intent(PlanetActivity.this, NewsActivity.class));
+                        return true;
+                    case R.id.nav_picture:
+                        startActivity(new Intent(PlanetActivity.this, PictureActivity.class));
+                        return true;
+                    case R.id.nav_gravity:
+                        startActivity(new Intent(PlanetActivity.this, GravityDemoActivity.class));
                         return true;
                     default:
                         return false;

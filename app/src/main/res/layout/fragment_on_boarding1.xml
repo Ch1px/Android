@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4865A"
+    android:background="#Ffffff"
     android:fitsSystemWindows="true">
 
     <ImageView
@@ -110,7 +110,7 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="325dp"
         android:scaleX="2"
         android:scaleY="2"
         android:src="@drawable/tab1_icon"
@@ -118,7 +118,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="@id/learnDis"
-        app:layout_constraintTop_toBottomOf="@id/learnDis"
+        app:layout_constraintTop_toBottomOf="@id/onBoardImg"
         app:layout_constraintVertical_bias="0"
         app:layout_constraintWidth_percent=".5" />
 

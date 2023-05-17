@@ -10,19 +10,25 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_solar"
-            android:title="@string/solar_viewer"
-            android:icon="@drawable/solar_icon"/>
+            android:icon="@drawable/news_icon"
+            android:title="@string/solar_viewer" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_picture"
+            android:icon="@drawable/picture_icon"
+            android:title="Picture of the day" />
     </group>
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_planets"
             android:title="@string/planets"
-            android:icon="@drawable/sun_icon"/>
+            android:icon="@drawable/fact_icon"/>
     </group>
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_contact"
-            android:title="@string/contact"
-            android:icon="@drawable/contact_icon"/>
+            android:id="@+id/nav_gravity"
+            android:title="@string/gravity"
+            android:icon="@drawable/gravity_icon"/>
     </group>
 </menu>

@@ -26,6 +26,8 @@
         android:fontFamily="@font/baloo"
         android:text="https://solar-explore.netlify.app"
         android:textColor="@color/white"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        android:autoLink="web"
+        android:linksClickable="true" />
 
 </LinearLayout>

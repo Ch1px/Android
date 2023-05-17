@@ -5,15 +5,10 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;import android.content.Intent;
-import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -56,10 +51,13 @@ public class PlanetDetailActivity extends AppCompatActivity {
                         startActivity(new Intent(PlanetDetailActivity.this, PlanetActivity.class));
                         return true;
                     case R.id.nav_solar:
-                        startActivity(new Intent(PlanetDetailActivity.this, SolarActivity.class));
+                        startActivity(new Intent(PlanetDetailActivity.this, NewsActivity.class));
                         return true;
-                    case R.id.nav_contact:
-                        startActivity(new Intent(PlanetDetailActivity.this, ContactActivity.class));
+                    case R.id.nav_picture:
+                        startActivity(new Intent(PlanetDetailActivity.this, PictureActivity.class));
+                        return true;
+                    case R.id.nav_gravity:
+                        startActivity(new Intent(PlanetDetailActivity.this, GravityDemoActivity.class));
                         return true;
                     default:
                         return false;

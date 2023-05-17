@@ -10,12 +10,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
+public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.myViewHolder> {
     private final List<PlanetData> planet;
 
-    public Adapter(List<PlanetData> planet) {
+    public PlanetAdapter(List<PlanetData> planet) {
         this.planet = planet;
     }
 
@@ -73,8 +75,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
                 dummyImage[0] =  R.drawable.sun_img;
                 break;
         }
-        holder.planetimg.setImageResource(dummyImage[0]);
-
+        Glide.with(holder.itemView.getContext())
+                .load(dummyImage[0])
+                .into(holder.planetimg);
     }
 
     @Override

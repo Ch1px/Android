@@ -5,9 +5,9 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_planet">planetActivity</string>
-    <string name="contact">Contact</string>
-    <string name="planets">Planets</string>
-    <string name="solar_viewer">Solar Viewer</string>
+    <string name="planets">Planet Facts</string>
+    <string name="solar_viewer">Astronomy News</string>
     <string name="home">Home</string>
+    <string name="gravity">Gravity Demo</string>
 
 </resources>
